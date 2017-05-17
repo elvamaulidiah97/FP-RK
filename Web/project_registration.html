@@ -70,16 +70,16 @@
 	          <a class="navbar-brand" href="#"><b>ITSPROJECT</b></a>
 	        </div>
 	        <div class="navbar-collapse collapse">
-	          <ul class="nav navbar-nav">
+	          <!--<ul class="nav navbar-nav">
 	            <li class="active"><a href="#home" class="smothscroll">Beranda</a></li>
 	            <li><a href="#desc" class="smothscroll">Kategori</a></li>
 	            <li><a href="#showcase" class="smothScroll">Portofolio</a></li>
 	            <li><a href="#contact" class="smothScroll">Kontak</a></li>
-	          </ul>
-	          <ul class="nav navbar-nav navbar-right">
+	          </ul>-->
+	          <!--<ul class="nav navbar-nav navbar-right">
 	          	<a class="btn btn-success" href="#" role="button" id="margin-btn">Daftar</a>
         		<a class="btn btn-primary" href="#" role="button" id="margin-btn">Login</a>
-        	  </ul>
+        	  </ul>-->
 	        </div><!--/.nav-collapse -->
 	      </div>
 	    </div>
@@ -90,37 +90,44 @@
 	    <div class="container">
 	    	<div class="row centered">
 						<h1>Isi data proyek</b></h1>
-						<br><br><br>
+						<br>
 			</div>
             <div class="row">
-                <div class="col-md-8 col-md-offset-2">
+                <div class="col-md-7 col-md-offset-3">
 
-                   
+                   <form role="form" action="#" method="post" enctype="plain">
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-10">
                                 <div class="form-group">
                                     <font color="white">Nama Proyek</font>
-                                    <input type="text" class="form-control" id="textarea">
+                                    <input type="text" class="form-control" id="textarea" placeholder="Nama proyek">
                                 </div>
                                 <div class="form-group">
 		                            <font color="white">Deskripsi Proyek</font>
-		                            <textarea class="form-control" rows="3"></textarea>
+		                            <textarea class="form-control" rows="3" placeholder="Tuliskan deskripsi proyek"></textarea>
 		                        </div>
                                 <div class="form-group">
                                     <font color="white">Fee</font>
-                                    <input type="text" class="form-control" id="textarea">
+                                    <div class="input-group">
+								      <div class="input-group-addon">Rp</div>
+								      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Fee">
+								    </div>
                                 </div>
                                 <div class="form-group">
                                     <font color="white">Deadline Penutupan</font>
-                                    <input type="text" class="form-control" id="textarea">
+                                    <input type="date" class="form-control" id="textarea">
                                 </div>
                                 <div class="form-group">
                                     <font color="white">Lama Pengerjaan</font>
-                                    <input type="text" class="form-control" id="textarea">
+                                    <div class="input-group">
+                                       <input type="number" class="form-control" id="textarea" placeholder="Lama pengerjaan">
+                                       <div class="input-group-addon">Hari</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    <button type="submit" class="btn btn-primary black-background" id="contactbtn">Send</button>
+                    </form>
+                    <button type="submit" class="btn btn-primary black-background" id="contactbtn">Kirim</button>
                 </div>
             </div>
         </div>
