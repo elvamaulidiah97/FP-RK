@@ -67,19 +67,19 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </button>
-	          <a class="navbar-brand" href="#"><b>ITSPROJECT</b></a>
+	          <a class="navbar-brand" href="C:/xampp/htdocs/ITSPROJECT/Web/index.html"><b>ITSPROJECT</b></a>
 	        </div>
 	        <div class="navbar-collapse collapse">
-	          <ul class="nav navbar-nav">
+	          <!--<ul class="nav navbar-nav">
 	            <li class="active"><a href="#home" class="smothscroll">Beranda</a></li>
 	            <li><a href="#desc" class="smothscroll">Kategori</a></li>
 	            <li><a href="#showcase" class="smothScroll">Portofolio</a></li>
 	            <li><a href="#contact" class="smothScroll">Kontak</a></li>
-	          </ul>
-	          <ul class="nav navbar-nav navbar-right">
+	          </ul>-->
+	          <!--<ul class="nav navbar-nav navbar-right">
 	          	<a class="btn btn-success" href="#" role="button" id="margin-btn">Daftar</a>
         		<a class="btn btn-primary" href="#" role="button" id="margin-btn">Login</a>
-        	  </ul>
+        	  </ul>-->
 	        </div><!--/.nav-collapse -->
 	      </div>
 	    </div>
@@ -87,57 +87,50 @@
 
 	<section id="home" name="home"></section>
 	<div id="headerwrap">
-	    <div class="input">
-	    	<div class="row">
-		    	<div class="row centered">
-						<h1>Isi data diri sesuai identitas anda</b></h1>
-						<br><br><br>
-				</div>
-				<div class="col-md-12 col-md-offset-4">
-					<form id="text" action="/search" style="display:inline;" method="post">
-						<input id="namanyay-search-box" name="Nama" type="text" placeholder="Nama Lengkap"/>
-					</form>
-				</div>
-				<br>
-				<div class="col-md-12 col-md-offset-4">
-					<form id="text" action="/search" style="display:inline;" method="post">
-						<input id="namanyay-search-box" name="Identitas" type="text" placeholder="Nomor NRP"/>
-					</form>
-				</div>
-				<br>
-				<div class="col-md-12 col-md-offset-4">
-					<form id="text" action="/search" style="display:inline;" method="post">
-						<input id="namanyay-search-box" name="Foto Identitas" type="text" placeholder="Foto Kartu Identitas"/>
-						<input id="namanyay-search-btn" value="Upload" type="submit"/>
-					</form>
-				</div>
-				<br>
-				<div class="col-md-12 col-md-offset-4">
-					<form id="text" action="/search" style="display:inline;" method="post">
-						<input id="namanyay-search-box" name="Alamat" type="text" placeholder="Alamat"/>
-					</form>
-				</div>
-				<br>
-				<div class="col-md-12 col-md-offset-4">
-					<form id="text" action="/search" style="display:inline;" method="post">
-						<input id="namanyay-search-box" name="Nomot Telepon" type="text" placeholder="Nomor Telepon/HP"/>
-					</form>
-				</div>
-				<br>
-				<div class="col-md-12 col-md-offset-4">
-					<form id="text" action="/search" style="display:inline;" method="post">
-						<input id="namanyay-search-box" name="Password" type="text" placeholder="Password"/>
-					</form>
-				</div>
-				<br>
-				<div class="col-md-12 col-md-offset-5">
-					<form id="text" action="/search" style="display:inline;" method="post">
-						<input id="namanyay-search-btn" value="Submit" type="submit"/>
-					</form>
-	    		</div>
-	    		<br>
-	    	</div>
-	    </div> <!--/ .container -->
+	    <div class="container">
+	    	<div class="row centered">
+						<h1>Registrasi User</b></h1>
+						<br>
+			</div>
+            <div class="row">
+                <div class="col-md-7 col-md-offset-3">
+
+                   <form role="form" action="#" method="post" enctype="plain">
+                        <div class="row">
+                            <div class="col-md-10">
+                                <div class="form-group">
+                                    <font color="white">NRP</font>
+                                    <input type="text" class="form-control" id="textarea" placeholder="Masukkan NRP">
+                                </div>
+                                <div class="form-group">
+                                    <font color="white">Nama Lengkap</font>
+                                    <input type="text" class="form-control" id="textarea" placeholder="Masukkan nama lengkap">
+                                </div>
+                                <div class="form-group">
+                                    <font color="white">Password</font>
+                                    <input type="Password" class="form-control" id="textarea" placeholder="Masukkan password">
+                                </div>
+                                <div class="form-group">
+                                    <font color="white">Alamat</font>
+                                    <input type="text" class="form-control" id="textarea" placeholder="Masukkan alamat rumah">
+                                </div>
+                                <div class="form-group">
+                                    <font color="white">No. Telepon/HP</font>
+                                    <input type="text" class="form-control" id="textarea" placeholder="Masukkan alamat rumah">
+                                </div>
+                                <div class="form-group">
+								    <label for="exampleInputFile" style="color: white">Upload KTM</label>
+								    <input type="file" id="exampleInputFile" style="color: white">
+								    <p class="help-block">Ukuran file maks. 2 MB</p>
+								</div>
+                            </div>
+                        </div>
+                    </form>
+                    <button type="submit" class="btn btn-primary black-background" id="contactbtn">Daftar</button>
+                </div>
+            </div>
+        </div>
+	    <br><br><br>
 	</div><!--/ #headerwrap -->
 
 	<section id="contact" name="contact"></section>
