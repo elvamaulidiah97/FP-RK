@@ -19,26 +19,59 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="js/bootstrap.min.js"></script>
 <!-- Custom Theme files -->
 <link href="css/style.css" rel='stylesheet' type='text/css' />
-<link href='//fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
 <!----font-Awesome----->
 <link href="css/font-awesome.css" rel="stylesheet">
+<style>
+	.navbar-nav > li > a {
+	    padding-top: 10px;
+	    padding-bottom: 10px;
+	}
+
+	.navbar-nav{
+		float: left;
+	}
+
+	.navbar-default {
+    background-color: #f8f8f8 !important;
+    border-color: #e7e7e7;
+    border-radius: 0px;
+	}
+
+	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #555555;
+    background-color: #e7e7e7;
+	}
+
+	.navbar-default .navbar-nav > li > a {
+    color: #777777;
+	}
+
+	#footerwrap {
+    background-color: #2f2f2f;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    text-align: left;
+	}
+
+</style>
 <!----font-Awesome----->
 </head>
 <body>
 <nav class="navbar navbar-default" role="navigation">
 	<div class="container">
-	    <div class="navbar-header">
+	    <div class="navbar-header" style="margin-top: 10px; margin-bottom: 10px;">
 	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-		        <span class="sr-only">Toggle navigation</span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 	        </button>
-	        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""/></a>
+	        <a class="navbar-brand" href="C:/xampp/htdocs/ITSPROJECT/Web/index.html"><b>ITSPROJECT</b></a>
 	    </div>
 	    <!--/.navbar-header-->
-	    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">
-	        <ul class="nav navbar-nav">
+	    <div class="navbar-collapse collapse" style="height: 1px;">
+	        <ul class="nav navbar-nav" style="margin-top: 10px; margin-bottom: 10px;">
 		        <li class="dropdown">
 		            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jobs<b class="caret"></b></a>
 		            <ul class="dropdown-menu">
@@ -115,8 +148,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			            <li><a href="jobs.html">Defence Jobs</a></li>
 		            </ul>
 		        </li>
-		        <li><a href="login.html">Login</a></li>
-		        <li><a href="resume.html">Upload Resume</a></li>
+	        </ul>
+					<ul class="nav navbar-nav navbar-right" style="margin-top: 10px; margin-bottom: 10px;">
+	          <li><a href="#">Login</a></li>
+	          <li><a href="user_registration.html">Daftar</a></li>
 	        </ul>
 	    </div>
 	    <div class="clearfix"> </div>
@@ -592,48 +627,41 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="clearfix"> </div>
 	</div>
 </div>
-<div class="footer">
+
+<div id="footerwrap">
 	<div class="container">
-		<div class="col-md-3 grid_3">
-			<h4>Navigate</h4>
-			<ul class="f_list f_list1">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="login.html">Sign In</a></li>
-				<li><a href="login.html">Join Now</a></li>
-				<li><a href="about.html">About</a></li>
-			</ul>
-			<ul class="f_list">
-				<li><a href="features.html">Features</a></li>
-				<li><a href="terms.html">Terms of use</a></li>
-				<li><a href="contact.html">Contact Us</a></li>
-				<li><a href="jobs.html">Post a Job</a></li>
-			</ul>
-			<div class="clearfix"> </div>
+		<div class="col-lg-5">
+			<h3>Alamat</h3>
+			<p>
+				Jurusan Teknik Informatika<br/>
+				Jalan Teknik Kimia<br/>
+				Institut Teknologi Sepuluh Nopember<br/>
+				Surabaya
+			</p>
 		</div>
-		<div class="col-md-3 grid_3">
-			<h4>Twitter Widget</h4>
-			<div class="footer-list">
-			  <ul>
-				<li><i class="fa fa-twitter tw1"> </i><p><span class="yellow"><a href="#">consectetuer</a></span> adipiscing elit web design</p></li>
-				<li><i class="fa fa-twitter tw1"> </i><p><span class="yellow"><a href="#">consectetuer</a></span> adipiscing elit web design</p></li>
-				<li><i class="fa fa-twitter tw1"> </i><p><span class="yellow"><a href="#">consectetuer</a></span> adipiscing elit web design</p></li>
-			  </ul>
-			</div>
+
+		<div class="col-lg-7">
+			<h3>Hubungi Kami</h3>
+			<br>
+			<form role="form" action="#" method="post" enctype="plain">
+				<div class="form-group">
+					<label for="name1">Nama</label>
+					<input type="name" name="Name" class="form-control" id="name1" placeholder="Nama">
+				</div>
+				<div class="form-group">
+					<label for="email1">Email</label>
+					<input type="email" name="Mail" class="form-control" id="email1" placeholder="Email">
+				</div>
+				<div class="form-group">
+					<label>Saran</label>
+					<textarea class="form-control" name="Message" rows="3"></textarea>
+				</div>
+				<br>
+				<button type="submit" class="btn btn-large btn-success">KIRIM</button>
+			</form>
 		</div>
-		<div class="col-md-3 grid_3">
-			<h4>Seeking</h4>
-			<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
-		</div>
-		<div class="col-md-3 grid_3">
-			<h4>Sign up for our newsletter</h4>
-			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.</p>
-			<form>
-				<input type="text" class="form-control" placeholder="Enter your email">
-				<button type="button" class="btn red">Subscribe now!</button>
-		    </form>
-		</div>
-		<div class="clearfix"> </div>
 	</div>
 </div>
+
 </body>
 </html>
